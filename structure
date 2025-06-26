@@ -1,0 +1,57 @@
+src/
+│
+├── assets/                    # Static files (images, logos, icons, fonts)
+│   ├── images/
+│   └── icons/
+│
+├── components/                # Reusable UI components
+│   ├── common/                # Generic components like Button, Input, Loader
+│   │   ├── Button.tsx
+│   │   └── Input.tsx
+│   ├── layout/                # Site-wide layout components like Navbar, Footer
+│   │   ├── Navbar.tsx
+│   │   └── Footer.tsx
+│   └── product/               # Product-specific UI like ProductCard, Rating
+│       └── ProductCard.tsx
+│
+├── pages/                     # Main route-based pages
+│   ├── Home.tsx
+│   ├── ProductDetails.tsx
+│   ├── Cart.tsx
+│   ├── Checkout.tsx
+│   └── NotFound.tsx
+│
+├── layouts/                   # Page layout wrappers
+│   └── MainLayout.tsx
+│
+├── routes/                    # Routing config
+│   └── AppRoutes.tsx
+│
+├── services/                  # API calls and integrations
+│   ├── api.ts                 # Axios instance setup
+│   └── productService.ts      # Product API calls
+│
+├── store/                     # Redux Toolkit or Context-based global state
+│   ├── index.ts               # Configure store
+│   ├── cartSlice.ts           # Cart state logic
+│   └── userSlice.ts           # Optional: user login/logout state
+│
+├── types/                     # Global TypeScript types/interfaces
+│   ├── product.ts             # Product interface
+│   └── user.ts
+│
+├── utils/                     # Helper functions (formatting, validation, etc.)
+│   ├── formatPrice.ts
+│   └── validators.ts
+│
+├── hooks/                     # Custom React hooks
+│   └── useCart.ts
+│
+├── constants/                 # App-wide constants (routes, labels)
+│   └── routes.ts
+│
+├── App.tsx                    # Main app wrapper
+├── index.tsx                  # App entry point
+├── index.css                  # Global styles (optional if using Tailwind)
+├── react-app-env.d.ts
+└── setupTests.ts              # For testing
